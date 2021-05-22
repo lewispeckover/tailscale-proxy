@@ -1,0 +1,5 @@
+Work in progress.
+
+Not currently working due to https://github.com/tailscale/tailscale/issues/1970
+
+docker run --name tailscale-proxy --cap-add=NET_ADMIN -e TAILSCALE_AUTHKEY=<auth key> -e TAILSCALE_EXITNODE=<node ip> $(docker build -q)
